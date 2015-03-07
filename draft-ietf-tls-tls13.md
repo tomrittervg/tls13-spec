@@ -979,7 +979,7 @@ length
   length MUST NOT exceed 2^14.
 
 fragment
-: The application data.  This data is transparent and treated as an
+: The application data.  This data is opaque and treated as an
   independent block to be dealt with by the higher-level protocol
   specified by the type field.
 {:br }
@@ -2959,7 +2959,7 @@ TLS-compliant application MUST implement the cipher suite [TODO:Needs to be sele
 
 Application data messages are carried by the record layer and are fragmented
 and encrypted based on the current connection state. The messages
-are treated as transparent data to the record layer.
+are treated as opaque data to the record layer.
 
 #  Security Considerations
 
